@@ -1,0 +1,47 @@
+
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://vola-chatbot-images.s3.amazonaws.com/qna.css">
+
+  </head>
+  <body>
+      <form action="/">
+        <div class="colums">
+          <div class="item">
+            <label for="fname"> First Name<span>*</span></label>
+            <input id="fname" type="text" name="fname" required/>
+          </div>
+          <div class="item">
+            <label for="lname"> Last Name<span>*</span></label>
+            <input id="lname" type="text" name="lname" required/>
+          </div>
+          <div class="item">
+            <label for="email">Email<span>*</span></label>
+            <input id="email" type="text"   name="email" required/>
+          </div>
+          <div class="item">
+            <label for="Contact">Contact No<span>*</span></label>
+            <input id="Contact" type="text"   name="Contact" required/>
+          </div>
+        
+        </div>
+        <div class="form-control">
+            <label for="state">Query Title<span>*</span></label>
+            <input class="form-control" id="query" type="text"   name="query" required/>
+        </div>
+        <div class="form-control">
+            <label for="query_description">Query Description<span>*</span></label>
+            <textarea id="description" name="description" rows="4" cols="50">
+               query description
+            </textarea>
+        </div>
+        
+        <div class="btn-block">
+          <button type="submit" href="/">Submit</button>
+        </div>
+      </form>
+  </body>
+</html>
