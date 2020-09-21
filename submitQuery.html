@@ -1,0 +1,144 @@
+
+<html>
+  <head>
+  <script>
+  window.onload=function test(){
+	console.log('test 123');
+  }
+  //   const myform = document.getElementById('myForm');
+    //   myform.addEventListener('submit', function(e) {
+    //     e.preventDefault();
+    //     const formData = new FormData(this);
+    //     var userData = {};
+    //     formData.forEach(function(value, key){
+    //       userData[key] = value;
+    //     });
+    //     var userInfo = JSON.stringify(userData);
+    //     fetch("https://18nq5tube7.execute-api.us-east-1.amazonaws.com/dev/cases/", {
+    //       headers: {
+    //         "Content-Type": "application/json; charset= UTF-8"
+    //       },
+    //       method:'POST',
+    //       body:userInfo,
+    //     }).then(function(response){
+    //       console.log(response.text())
+    //     })
+    //   })
+    // return false;
+	
+
+  </script>
+  <style>
+		html, body {
+      min-height: 100%;
+      }
+      body, div, form, input, select, textarea, label, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+      line-height: 22px;
+      }
+      textarea {
+      width: calc(100% - 12px);
+      padding: 5px;
+	  background-color: white
+      }
+	  text {
+		  background-color: white
+	  }
+      form {
+      width: 90%;
+      padding: 20px;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0 0 8px  #669999; 
+      }
+      input, select, textarea {
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      }
+      input {
+      width: calc(100% - 10px);
+      padding: 5px;
+      }
+
+      textarea {
+      width: 100%;
+      padding: 5px;
+      }
+      .item:hover p, .item:hover i, input:hover::placeholder {
+      color:  #669999;
+      }
+      .item input:hover, .item select:hover, .item textarea:hover {
+      border: 1px solid transparent;
+      box-shadow: 0 0 3px 0  #669999;
+      color: #669999;
+      }
+      .item {
+      position: relative;
+      margin: 10px 0;
+      }
+      .item span {
+      color: red;
+      }
+      .colums {
+      display:flex; justify-content:space-between; flex-direction:row;flex-wrap:wrap;
+      }
+      .colums div {
+      width:100%;
+      }
+      .btn-block {
+      margin-top: 10px;
+      text-align: center;
+      }
+      button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px; 
+      background:  #FF4500;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      }
+      button:hover {
+      background:  #a3c2c2;
+      }
+  </style>
+  </head>
+  <body>
+      <form class = "form" id = "myForm" onsubmit="return false" >
+          <div class="item">
+            <label for="fname"> First Name:</label>
+            <input id="firstName" type="text" name="firstName" required/>
+          </div>
+          <div class="item">
+            <label for="lname"> Last Name</label>
+            <input id="lastName" type="text" name="lastName" required/>
+          </div>
+          <div class="item">
+            <label for="email">Email</label>
+            <input id="email" type="text"   name="email" required/>
+          </div>
+          <div class="item">
+            <label for="Contact">Contact No</label>
+            <input id="contactNumber" type="text"   name="contactNumber" required/>
+          </div>
+          <div class="item">
+            <label for="state">Query Title</label>
+            <input  id="title" type="text"   name="title" required/>
+		</div>
+        <div class="item">
+            <label for="query_description">Query Description</label>
+            <textarea id="description" name="description" rows="3" cols="50">Please provide the query description</textarea>
+        </div>
+        <div>
+          <button onclick="test()">Submit</button>
+        </div>
+      </form>
+  </body>
+</html>
